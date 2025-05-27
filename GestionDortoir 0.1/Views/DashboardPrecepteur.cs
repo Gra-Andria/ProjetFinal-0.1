@@ -24,6 +24,62 @@ namespace GestionDortoir_0._1.Views
             labelNom.Text = user.Nom;
             labelRole.Text = user.Role;
         }
+        //Chargement les Panel
+        private void LoadUserControl(UserControl userControl) { 
+            panelPrincipale.Controls.Clear();
+            userControl.Dock = DockStyle.Fill;
+            panelPrincipale.Controls.Add(userControl);
+        }
+        //Transition du sidebar
+        bool sidebarExpand = true;
+        private void sidebarTransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand) {
+                panelMenu.Width -= 10;
+                if (panelMenu.Width <= 60) { 
+                    sidebarExpand = false;
+                    sidebarTransition.Stop();
+                } 
+            }
+            else
+            {
+                panelMenu.Width += 10;
+                if (panelMenu.Width >= 218)
+                {
+                    sidebarExpand = true;
+                    sidebarTransition.Stop();
+                }
+            }
+        }
 
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new DashboardControl());
+        }
+
+        private void btnEtudiant_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new GestionEtudiantControl());
+        }
+
+        private void btnChambre_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new GestionChambreControl());
+        }
+
+        private void btnPlanning_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new PlannificationControl());
+        }
+
+        private void btnRapport_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new GenerationRapport());
+        }
     }
 }

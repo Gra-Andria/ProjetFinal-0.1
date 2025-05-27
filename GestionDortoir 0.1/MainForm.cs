@@ -17,6 +17,7 @@ namespace GestionDortoir_0._1
         {
             InitializeComponent();
             ShowControl(new LoginControl(this));
+
         }
         public void ShowControl(UserControl control)
         {

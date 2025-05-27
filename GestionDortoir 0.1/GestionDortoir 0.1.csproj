@@ -114,17 +114,52 @@
     <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DashboardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\DashboardControl.Designer.cs">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DashboardPrecepteur.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\DashboardPrecepteur.Designer.cs">
       <DependentUpon>DashboardPrecepteur.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\GenerationRapport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\GenerationRapport.Designer.cs">
+      <DependentUpon>GenerationRapport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GestionChambreControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\GestionChambreControl.Designer.cs">
+      <DependentUpon>GestionChambreControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GestionEtudiantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\GestionEtudiantControl.Designer.cs">
+      <DependentUpon>GestionEtudiantControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Views\LoginControl.Designer.cs">
       <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PlannificationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\PlannificationControl.Designer.cs">
+      <DependentUpon>PlannificationControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\RegisterControl.cs">
       <SubType>UserControl</SubType>
@@ -138,12 +173,28 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DashboardControl.resx">
+      <DependentUpon>DashboardControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DashboardPrecepteur.resx">
       <DependentUpon>DashboardPrecepteur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\GenerationRapport.resx">
+      <DependentUpon>GenerationRapport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GestionChambreControl.resx">
+      <DependentUpon>GestionChambreControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\GestionEtudiantControl.resx">
+      <DependentUpon>GestionEtudiantControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginControl.resx">
       <DependentUpon>LoginControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PlannificationControl.resx">
+      <DependentUpon>PlannificationControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RegisterControl.resx">
       <DependentUpon>RegisterControl.cs</DependentUpon>
@@ -163,16 +214,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-menu-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-dashboard-64 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-people-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-people-641.png" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
