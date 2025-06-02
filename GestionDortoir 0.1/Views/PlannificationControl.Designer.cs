@@ -31,8 +31,8 @@
             this.tabControlPlanning = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabTacheMenagere = new System.Windows.Forms.TabPage();
             this.tabCulte = new System.Windows.Forms.TabPage();
-            this.tabEvenements = new System.Windows.Forms.TabPage();
             this.tabPresenceCulte = new System.Windows.Forms.TabPage();
+            this.tabEvenements = new System.Windows.Forms.TabPage();
             this.tabOpenHouse = new System.Windows.Forms.TabPage();
             this.tabBureauQuartier = new System.Windows.Forms.TabPage();
             this.tabControlPlanning.SuspendLayout();
@@ -52,7 +52,7 @@
             this.tabControlPlanning.Location = new System.Drawing.Point(0, 0);
             this.tabControlPlanning.Name = "tabControlPlanning";
             this.tabControlPlanning.SelectedIndex = 0;
-            this.tabControlPlanning.Size = new System.Drawing.Size(682, 600);
+            this.tabControlPlanning.Size = new System.Drawing.Size(1166, 732);
             this.tabControlPlanning.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tabControlPlanning.TabButtonHoverState.FillColor = System.Drawing.Color.Indigo;
             this.tabControlPlanning.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -77,7 +77,7 @@
             this.tabTacheMenagere.Location = new System.Drawing.Point(184, 4);
             this.tabTacheMenagere.Name = "tabTacheMenagere";
             this.tabTacheMenagere.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTacheMenagere.Size = new System.Drawing.Size(494, 592);
+            this.tabTacheMenagere.Size = new System.Drawing.Size(978, 724);
             this.tabTacheMenagere.TabIndex = 0;
             this.tabTacheMenagere.Text = "Tâches ménagère";
             this.tabTacheMenagere.UseVisualStyleBackColor = true;
@@ -87,34 +87,34 @@
             this.tabCulte.Location = new System.Drawing.Point(184, 4);
             this.tabCulte.Name = "tabCulte";
             this.tabCulte.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCulte.Size = new System.Drawing.Size(494, 592);
+            this.tabCulte.Size = new System.Drawing.Size(612, 656);
             this.tabCulte.TabIndex = 1;
             this.tabCulte.Text = "Plannification des cultes";
             this.tabCulte.UseVisualStyleBackColor = true;
-            // 
-            // tabEvenements
-            // 
-            this.tabEvenements.Location = new System.Drawing.Point(184, 4);
-            this.tabEvenements.Name = "tabEvenements";
-            this.tabEvenements.Size = new System.Drawing.Size(494, 592);
-            this.tabEvenements.TabIndex = 2;
-            this.tabEvenements.Text = "Plannification des évènements";
-            this.tabEvenements.UseVisualStyleBackColor = true;
             // 
             // tabPresenceCulte
             // 
             this.tabPresenceCulte.Location = new System.Drawing.Point(184, 4);
             this.tabPresenceCulte.Name = "tabPresenceCulte";
-            this.tabPresenceCulte.Size = new System.Drawing.Size(494, 592);
+            this.tabPresenceCulte.Size = new System.Drawing.Size(612, 656);
             this.tabPresenceCulte.TabIndex = 3;
             this.tabPresenceCulte.Text = "Présence au culte";
             this.tabPresenceCulte.UseVisualStyleBackColor = true;
+            // 
+            // tabEvenements
+            // 
+            this.tabEvenements.Location = new System.Drawing.Point(184, 4);
+            this.tabEvenements.Name = "tabEvenements";
+            this.tabEvenements.Size = new System.Drawing.Size(612, 656);
+            this.tabEvenements.TabIndex = 2;
+            this.tabEvenements.Text = "Plannification des évènements";
+            this.tabEvenements.UseVisualStyleBackColor = true;
             // 
             // tabOpenHouse
             // 
             this.tabOpenHouse.Location = new System.Drawing.Point(184, 4);
             this.tabOpenHouse.Name = "tabOpenHouse";
-            this.tabOpenHouse.Size = new System.Drawing.Size(494, 592);
+            this.tabOpenHouse.Size = new System.Drawing.Size(612, 656);
             this.tabOpenHouse.TabIndex = 4;
             this.tabOpenHouse.Text = "Open House";
             this.tabOpenHouse.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             // 
             this.tabBureauQuartier.Location = new System.Drawing.Point(184, 4);
             this.tabBureauQuartier.Name = "tabBureauQuartier";
-            this.tabBureauQuartier.Size = new System.Drawing.Size(494, 592);
+            this.tabBureauQuartier.Size = new System.Drawing.Size(612, 656);
             this.tabBureauQuartier.TabIndex = 5;
             this.tabBureauQuartier.Text = "Membre de bureau des quartiers";
             this.tabBureauQuartier.UseVisualStyleBackColor = true;
@@ -134,7 +134,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControlPlanning);
             this.Name = "PlannificationControl";
-            this.Size = new System.Drawing.Size(682, 600);
+            this.Size = new System.Drawing.Size(1166, 732);
             this.tabControlPlanning.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -125,7 +125,7 @@
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "DashboardControl";
-            this.Size = new System.Drawing.Size(682, 600);
+            this.Size = new System.Drawing.Size(1166, 732);
             this.ResumeLayout(false);
 
         }

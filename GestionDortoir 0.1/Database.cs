@@ -9,7 +9,7 @@ namespace GestionDortoir_0._1
 {
     internal class Database
     {
-        private static string connectionString = "server=localhost;database=gestiondortoir2;uid=root;pwd=;";
+        private static string connectionString = "server=localhost;database=gestiondortoir;uid=root;pwd=;";
         public static MySqlConnection GetConnection()
         {
             return new MySqlConnection(connectionString);

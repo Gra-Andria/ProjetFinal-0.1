@@ -104,6 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\ChambreController.cs" />
+    <Compile Include="Controllers\EtudiantController.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -111,6 +113,8 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Chambre.cs" />
+    <Compile Include="Models\Etudiants.cs" />
     <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +122,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChambreCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ChambreCard.Designer.cs">
+      <DependentUpon>ChambreCard.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\DashboardControl.cs">
       <SubType>UserControl</SubType>

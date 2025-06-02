@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace GestionDortoir_0._1.Views
@@ -43,7 +44,7 @@ namespace GestionDortoir_0._1.Views
                 // TODO : rediriger vers le dashboard ou autre interface selon le rôle
                 switch (user.Role)
                 {
-                    case "etudiant":
+                    case "precepteur":
                         mainForm.ShowControl(new DashboardPrecepteur(mainForm, user));
                         break;
                     default:
@@ -58,7 +59,10 @@ namespace GestionDortoir_0._1.Views
 
         private void linkRegister_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            mainForm.ShowControl(new RegisterControl(mainForm));
+            var register = new RegisterControl(mainForm);
+            mainForm.ShowControl(register);
+            guna2Transition1.ShowSync(register);
         }
+
     }
 }

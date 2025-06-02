@@ -33,7 +33,9 @@
             this.tabGestionChambre = new System.Windows.Forms.TabPage();
             this.tabMateriels = new System.Windows.Forms.TabPage();
             this.tabAffectation = new System.Windows.Forms.TabPage();
+            this.panelChambre = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tabControlChambre.SuspendLayout();
+            this.tabAffectation.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlChambre
@@ -48,7 +50,7 @@
             this.tabControlChambre.Location = new System.Drawing.Point(0, 0);
             this.tabControlChambre.Name = "tabControlChambre";
             this.tabControlChambre.SelectedIndex = 0;
-            this.tabControlChambre.Size = new System.Drawing.Size(682, 600);
+            this.tabControlChambre.Size = new System.Drawing.Size(1166, 732);
             this.tabControlChambre.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.tabControlChambre.TabButtonHoverState.FillColor = System.Drawing.Color.Indigo;
             this.tabControlChambre.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -73,7 +75,7 @@
             this.tabPlan.Location = new System.Drawing.Point(184, 4);
             this.tabPlan.Name = "tabPlan";
             this.tabPlan.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPlan.Size = new System.Drawing.Size(494, 592);
+            this.tabPlan.Size = new System.Drawing.Size(978, 724);
             this.tabPlan.TabIndex = 0;
             this.tabPlan.Text = "Plan du dortoir";
             this.tabPlan.UseVisualStyleBackColor = true;
@@ -83,7 +85,7 @@
             this.tabGestionChambre.Location = new System.Drawing.Point(184, 4);
             this.tabGestionChambre.Name = "tabGestionChambre";
             this.tabGestionChambre.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGestionChambre.Size = new System.Drawing.Size(494, 592);
+            this.tabGestionChambre.Size = new System.Drawing.Size(978, 724);
             this.tabGestionChambre.TabIndex = 1;
             this.tabGestionChambre.Text = "Gestion des chambres";
             this.tabGestionChambre.UseVisualStyleBackColor = true;
@@ -92,19 +94,27 @@
             // 
             this.tabMateriels.Location = new System.Drawing.Point(184, 4);
             this.tabMateriels.Name = "tabMateriels";
-            this.tabMateriels.Size = new System.Drawing.Size(494, 592);
+            this.tabMateriels.Size = new System.Drawing.Size(978, 724);
             this.tabMateriels.TabIndex = 2;
             this.tabMateriels.Text = "Matériels & Equipements";
             this.tabMateriels.UseVisualStyleBackColor = true;
             // 
             // tabAffectation
             // 
+            this.tabAffectation.Controls.Add(this.panelChambre);
             this.tabAffectation.Location = new System.Drawing.Point(184, 4);
             this.tabAffectation.Name = "tabAffectation";
-            this.tabAffectation.Size = new System.Drawing.Size(494, 592);
+            this.tabAffectation.Size = new System.Drawing.Size(978, 724);
             this.tabAffectation.TabIndex = 3;
             this.tabAffectation.Text = "Affectation & Réaffectation";
             this.tabAffectation.UseVisualStyleBackColor = true;
+            // 
+            // panelChambre
+            // 
+            this.panelChambre.Location = new System.Drawing.Point(20, 81);
+            this.panelChambre.Name = "panelChambre";
+            this.panelChambre.Size = new System.Drawing.Size(924, 624);
+            this.panelChambre.TabIndex = 0;
             // 
             // GestionChambreControl
             // 
@@ -112,8 +122,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControlChambre);
             this.Name = "GestionChambreControl";
-            this.Size = new System.Drawing.Size(682, 600);
+            this.Size = new System.Drawing.Size(1166, 732);
             this.tabControlChambre.ResumeLayout(false);
+            this.tabAffectation.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -125,5 +136,6 @@
         private System.Windows.Forms.TabPage tabGestionChambre;
         private System.Windows.Forms.TabPage tabMateriels;
         private System.Windows.Forms.TabPage tabAffectation;
+        private Guna.UI2.WinForms.Guna2GradientPanel panelChambre;
     }
 }

@@ -30,31 +30,11 @@ namespace GestionDortoir_0._1.Views
             userControl.Dock = DockStyle.Fill;
             panelPrincipale.Controls.Add(userControl);
         }
-        //Transition du sidebar
-        bool sidebarExpand = true;
-        private void sidebarTransition_Tick(object sender, EventArgs e)
-        {
-            if (sidebarExpand) {
-                panelMenu.Width -= 10;
-                if (panelMenu.Width <= 60) { 
-                    sidebarExpand = false;
-                    sidebarTransition.Stop();
-                } 
-            }
-            else
-            {
-                panelMenu.Width += 10;
-                if (panelMenu.Width >= 218)
-                {
-                    sidebarExpand = true;
-                    sidebarTransition.Stop();
-                }
-            }
-        }
+        
 
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            sidebarTransition.Start();
+            MenuTimer.Start();
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -81,5 +61,30 @@ namespace GestionDortoir_0._1.Views
         {
             LoadUserControl(new GenerationRapport());
         }
+        //Transition du sidebar
+        bool MenuEtendu;
+        private void MenuTimer_Tick(object sender, EventArgs e)
+        {
+            if (MenuEtendu)
+            {
+                //Si le menu est etendu, minimiser
+                menu.Width -= 10;
+                if (menu.Width == menu.MinimumSize.Width)
+                {
+                    MenuEtendu = false;
+                    MenuTimer.Stop();
+                }
+            }
+            else
+            {
+                menu.Width += 10;
+                if (menu.Width == menu.MaximumSize.Width)
+                {
+                    MenuEtendu = true;
+                    MenuTimer.Stop();
+                }
+            }
+        }
+
     }
 }
