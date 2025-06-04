@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace GestionDortoir_0._1.Models
 {
-    public class Chambre
+    public class Equipement
     {
-        public int numero_chambre { get; set; }
-        public int capacite { get; set; }
-        public string remarque { get; set; }
-        
+        public int IdEquipement { get; set; }
+        public string Nom { get; set; }
+        public int NumeroChambre { get; set; }
     }
 }

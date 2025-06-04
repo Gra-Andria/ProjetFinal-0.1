@@ -105,6 +105,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\ChambreController.cs" />
+    <Compile Include="Controllers\EquipementController.cs" />
     <Compile Include="Controllers\EtudiantController.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="MainForm.cs">
@@ -114,6 +115,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Chambre.cs" />
+    <Compile Include="Models\Equipement.cs" />
     <Compile Include="Models\Etudiants.cs" />
     <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Program.cs" />
@@ -123,11 +125,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Views\ChambreCard.cs">
+    <Compile Include="Views\CardChambre.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\ChambreCard.Designer.cs">
-      <DependentUpon>ChambreCard.cs</DependentUpon>
+    <Compile Include="Views\CardChambre.Designer.cs">
+      <DependentUpon>CardChambre.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\DashboardControl.cs">
       <SubType>UserControl</SubType>
@@ -140,6 +142,12 @@
     </Compile>
     <Compile Include="Views\DashboardPrecepteur.Designer.cs">
       <DependentUpon>DashboardPrecepteur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FormulaireChambre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FormulaireChambre.Designer.cs">
+      <DependentUpon>FormulaireChambre.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\GenerationRapport.cs">
       <SubType>UserControl</SubType>
@@ -185,11 +193,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\CardChambre.resx">
+      <DependentUpon>CardChambre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\DashboardControl.resx">
       <DependentUpon>DashboardControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DashboardPrecepteur.resx">
       <DependentUpon>DashboardPrecepteur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FormulaireChambre.resx">
+      <DependentUpon>FormulaireChambre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\GenerationRapport.resx">
       <DependentUpon>GenerationRapport.cs</DependentUpon>

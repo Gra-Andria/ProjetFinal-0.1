@@ -33,10 +33,10 @@ namespace GestionDortoir_0._1.Views
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionEtudiantControl));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabRepartitionEtudiant = new System.Windows.Forms.TabPage();
             this.tabControlEtudiant = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabFormulaire = new System.Windows.Forms.TabPage();
@@ -96,6 +96,10 @@ namespace GestionDortoir_0._1.Views
             this.tabSuivi = new System.Windows.Forms.TabPage();
             this.guna2CustomGradientPanel1 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.labelTitreGEtudiant = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtRecherche = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblAucunTrouver = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cmbAnneeEtude = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tabControlEtudiant.SuspendLayout();
             this.tabFormulaire.SuspendLayout();
             this.panelPhoto.SuspendLayout();
@@ -104,6 +108,7 @@ namespace GestionDortoir_0._1.Views
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEtudiants)).BeginInit();
             this.tabRepartition.SuspendLayout();
             this.guna2CustomGradientPanel1.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabRepartitionEtudiant
@@ -893,6 +898,8 @@ namespace GestionDortoir_0._1.Views
             // 
             // tabListeEtudiant
             // 
+            this.tabListeEtudiant.Controls.Add(this.lblAucunTrouver);
+            this.tabListeEtudiant.Controls.Add(this.guna2Panel1);
             this.tabListeEtudiant.Controls.Add(this.dataGridViewEtudiants);
             this.tabListeEtudiant.Location = new System.Drawing.Point(184, 4);
             this.tabListeEtudiant.Name = "tabListeEtudiant";
@@ -908,47 +915,46 @@ namespace GestionDortoir_0._1.Views
             this.dataGridViewEtudiants.AllowUserToDeleteRows = false;
             this.dataGridViewEtudiants.AllowUserToResizeColumns = false;
             this.dataGridViewEtudiants.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
-            this.dataGridViewEtudiants.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.dataGridViewEtudiants.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewEtudiants.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewEtudiants.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.dataGridViewEtudiants.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewEtudiants.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewEtudiants.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridViewEtudiants.ColumnHeadersHeight = 25;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewEtudiants.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridViewEtudiants.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 8F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewEtudiants.DefaultCellStyle = dataGridViewCellStyle11;
             this.dataGridViewEtudiants.EnableHeadersVisualStyles = true;
             this.dataGridViewEtudiants.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
-            this.dataGridViewEtudiants.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewEtudiants.Location = new System.Drawing.Point(3, 83);
             this.dataGridViewEtudiants.MultiSelect = false;
             this.dataGridViewEtudiants.Name = "dataGridViewEtudiants";
             this.dataGridViewEtudiants.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Goldenrod;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewEtudiants.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Goldenrod;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewEtudiants.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewEtudiants.RowHeadersVisible = false;
             this.dataGridViewEtudiants.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewEtudiants.RowTemplate.Height = 28;
-            this.dataGridViewEtudiants.Size = new System.Drawing.Size(972, 591);
+            this.dataGridViewEtudiants.Size = new System.Drawing.Size(972, 563);
             this.dataGridViewEtudiants.TabIndex = 4;
             this.dataGridViewEtudiants.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
             this.dataGridViewEtudiants.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
@@ -1085,6 +1091,86 @@ namespace GestionDortoir_0._1.Views
             this.labelTitreGEtudiant.TabIndex = 0;
             this.labelTitreGEtudiant.Text = "Gestion des étudiants";
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.cmbAnneeEtude);
+            this.guna2Panel1.Controls.Add(this.txtRecherche);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 3);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(972, 74);
+            this.guna2Panel1.TabIndex = 5;
+            // 
+            // txtRecherche
+            // 
+            this.txtRecherche.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.txtRecherche.BorderRadius = 10;
+            this.txtRecherche.BorderThickness = 2;
+            this.txtRecherche.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRecherche.DefaultText = "";
+            this.txtRecherche.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtRecherche.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtRecherche.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRecherche.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtRecherche.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.txtRecherche.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRecherche.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtRecherche.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.txtRecherche.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRecherche.Location = new System.Drawing.Point(29, 19);
+            this.txtRecherche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRecherche.Name = "txtRecherche";
+            this.txtRecherche.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.txtRecherche.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtRecherche.PlaceholderText = "Recherche";
+            this.txtRecherche.SelectedText = "";
+            this.txtRecherche.Size = new System.Drawing.Size(259, 36);
+            this.txtRecherche.TabIndex = 0;
+            this.txtRecherche.TextChanged += new System.EventHandler(this.txtRecherche_TextChanged);
+            // 
+            // lblAucunTrouver
+            // 
+            this.lblAucunTrouver.BackColor = System.Drawing.Color.Transparent;
+            this.lblAucunTrouver.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAucunTrouver.ForeColor = System.Drawing.Color.Red;
+            this.lblAucunTrouver.Location = new System.Drawing.Point(443, 182);
+            this.lblAucunTrouver.Name = "lblAucunTrouver";
+            this.lblAucunTrouver.Size = new System.Drawing.Size(194, 23);
+            this.lblAucunTrouver.TabIndex = 6;
+            this.lblAucunTrouver.Text = " ** Aucun résultat trouvé ** ";
+            this.lblAucunTrouver.Visible = false;
+            // 
+            // cmbAnneeEtude
+            // 
+            this.cmbAnneeEtude.BackColor = System.Drawing.Color.Transparent;
+            this.cmbAnneeEtude.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.cmbAnneeEtude.BorderRadius = 11;
+            this.cmbAnneeEtude.BorderThickness = 2;
+            this.cmbAnneeEtude.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbAnneeEtude.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbAnneeEtude.FillColor = System.Drawing.Color.WhiteSmoke;
+            this.cmbAnneeEtude.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbAnneeEtude.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbAnneeEtude.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.cmbAnneeEtude.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.cmbAnneeEtude.ItemHeight = 30;
+            this.cmbAnneeEtude.Items.AddRange(new object[] {
+            "Toutes",
+            "L1",
+            "L2",
+            "L3"});
+            this.cmbAnneeEtude.ItemsAppearance.BackColor = System.Drawing.Color.White;
+            this.cmbAnneeEtude.ItemsAppearance.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAnneeEtude.ItemsAppearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.cmbAnneeEtude.Location = new System.Drawing.Point(837, 19);
+            this.cmbAnneeEtude.Name = "cmbAnneeEtude";
+            this.cmbAnneeEtude.Size = new System.Drawing.Size(94, 36);
+            this.cmbAnneeEtude.StartIndex = 0;
+            this.cmbAnneeEtude.TabIndex = 1;
+            this.cmbAnneeEtude.TextOffset = new System.Drawing.Point(10, 0);
+            this.cmbAnneeEtude.SelectedIndexChanged += new System.EventHandler(this.cmbAnneeEtude_SelectedIndexChanged);
+            // 
             // GestionEtudiantControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1102,11 +1188,13 @@ namespace GestionDortoir_0._1.Views
             this.panelPhoto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEtudiant)).EndInit();
             this.tabListeEtudiant.ResumeLayout(false);
+            this.tabListeEtudiant.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEtudiants)).EndInit();
             this.tabRepartition.ResumeLayout(false);
             this.tabRepartition.PerformLayout();
             this.guna2CustomGradientPanel1.ResumeLayout(false);
             this.guna2CustomGradientPanel1.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1171,5 +1259,9 @@ namespace GestionDortoir_0._1.Views
         private FlowLayoutPanel flpEtudiants;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2TextBox txtRecherche;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblAucunTrouver;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbAnneeEtude;
     }
 }

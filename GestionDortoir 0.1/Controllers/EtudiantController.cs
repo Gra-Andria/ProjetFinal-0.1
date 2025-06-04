@@ -73,35 +73,37 @@ namespace GestionDortoir_0._1.Controllers
                     conn.Open();
                     string query = "SELECT * FROM etudiant";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                    using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        while (reader.Read())
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            Etudiants etudiant = new Etudiants
+                            while (reader.Read())
                             {
-                                Matricule = SafeGet<int>(reader, "matricule"),
-                                Nom = SafeGet<string>(reader, "nom"),
-                                Prenom = SafeGet<string>(reader, "prenom"),
-                                Filiere = SafeGet<string>(reader, "filiere"),
-                                DateNaissance = SafeGet<DateTime>(reader, "date_naissance"),
-                                LieuNaissance = SafeGet<string>(reader, "lieu_naissance"),
-                                Picture = SafeGet<byte[]>(reader, "picture"),
-                                NomPere = SafeGet<string>(reader, "nom_pere"),
-                                ProfessionPere = SafeGet<string>(reader, "profession_pere"),
-                                NomMere = SafeGet<string>(reader, "nom_mere"),
-                                ProfessionMere = SafeGet<string>(reader, "profession_mere"),
-                                AnneeEtude = SafeGet<string>(reader, "annee_etude"),
-                                NumeroEtudiant = SafeGet<string>(reader, "numero_etudiant"),
-                                NumeroTelPere = SafeGet<string>(reader, "numero_tel_pere"),
-                                NumeroTelMere = SafeGet<string>(reader, "numero_tel_mere"),
-                                NomTuteur = SafeGet<string>(reader, "nom_tuteur"),
-                                ProfessionTuteur = SafeGet<string>(reader, "profession_tuteur"),
-                                NumeroTelTuteur = SafeGet<string>(reader, "numero_tel_tuteur"),
-                                AdresseParent = SafeGet<string>(reader, "adresse_parent"),
-                                AdresseTuteur = SafeGet<string>(reader, "adresse_tuteur")
-                            };
+                                Etudiants etudiant = new Etudiants
+                                {
+                                    Matricule = SafeGet<int>(reader, "matricule"),
+                                    Nom = SafeGet<string>(reader, "nom"),
+                                    Prenom = SafeGet<string>(reader, "prenom"),
+                                    Filiere = SafeGet<string>(reader, "filiere"),
+                                    DateNaissance = SafeGet<DateTime>(reader, "date_naissance"),
+                                    LieuNaissance = SafeGet<string>(reader, "lieu_naissance"),
+                                    Picture = SafeGet<byte[]>(reader, "picture"),
+                                    NomPere = SafeGet<string>(reader, "nom_pere"),
+                                    ProfessionPere = SafeGet<string>(reader, "profession_pere"),
+                                    NomMere = SafeGet<string>(reader, "nom_mere"),
+                                    ProfessionMere = SafeGet<string>(reader, "profession_mere"),
+                                    AnneeEtude = SafeGet<string>(reader, "annee_etude"),
+                                    NumeroEtudiant = SafeGet<string>(reader, "numero_etudiant"),
+                                    NumeroTelPere = SafeGet<string>(reader, "numero_tel_pere"),
+                                    NumeroTelMere = SafeGet<string>(reader, "numero_tel_mere"),
+                                    NomTuteur = SafeGet<string>(reader, "nom_tuteur"),
+                                    ProfessionTuteur = SafeGet<string>(reader, "profession_tuteur"),
+                                    NumeroTelTuteur = SafeGet<string>(reader, "numero_tel_tuteur"),
+                                    AdresseParent = SafeGet<string>(reader, "adresse_parent"),
+                                    AdresseTuteur = SafeGet<string>(reader, "adresse_tuteur")
+                                };
 
-                            liste.Add(etudiant);
+                                liste.Add(etudiant);
+                            }
                         }
                     }
                 }

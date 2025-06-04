@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|d:\\l3\\2eme semestre\\gestiondortoir 0.1\\gestiondortoir 0.1\\views\\gestionetudiantcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|solutionrelative:gestiondortoir 0.1\\views\\gestionetudiantcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|d:\\l3\\2eme semestre\\gestiondortoir 0.1\\gestiondortoir 0.1\\views\\formulairechambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|solutionrelative:gestiondortoir 0.1\\views\\formulairechambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|d:\\l3\\2eme semestre\\gestiondortoir 0.1\\gestiondortoir 0.1\\views\\formulairechambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|solutionrelative:gestiondortoir 0.1\\views\\formulairechambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|d:\\l3\\2eme semestre\\gestiondortoir 0.1\\gestiondortoir 0.1\\views\\formulairechambre.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|solutionrelative:gestiondortoir 0.1\\views\\formulairechambre.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|d:\\l3\\2eme semestre\\gestiondortoir 0.1\\gestiondortoir 0.1\\views\\gestionchambrecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|solutionrelative:gestiondortoir 0.1\\views\\gestionchambrecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|d:\\l3\\2eme semestre\\gestiondortoir 0.1\\gestiondortoir 0.1\\views\\cardchambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9BE853BB-4704-49B6-AD81-61CE65B1195F}|GestionDortoir 0.1\\GestionDortoir 0.1.csproj|solutionrelative:gestiondortoir 0.1\\views\\cardchambre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,34 +29,84 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 287,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 277,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 44,
-          "SelectedChildIndex": 1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormulaireChambre.Designer.cs",
+              "DocumentMoniker": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\FormulaireChambre.Designer.cs",
+              "RelativeDocumentMoniker": "GestionDortoir 0.1\\Views\\FormulaireChambre.Designer.cs",
+              "ToolTip": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\FormulaireChambre.Designer.cs",
+              "RelativeToolTip": "GestionDortoir 0.1\\Views\\FormulaireChambre.Designer.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAADwv14AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T00:24:38.926Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GestionEtudiantControl.cs [Design]",
-              "DocumentMoniker": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\GestionEtudiantControl.cs",
-              "RelativeDocumentMoniker": "GestionDortoir 0.1\\Views\\GestionEtudiantControl.cs",
-              "ToolTip": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\GestionEtudiantControl.cs [Design]",
-              "RelativeToolTip": "GestionDortoir 0.1\\Views\\GestionEtudiantControl.cs [Design]",
+              "Title": "FormulaireChambre.cs",
+              "DocumentMoniker": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\FormulaireChambre.cs",
+              "RelativeDocumentMoniker": "GestionDortoir 0.1\\Views\\FormulaireChambre.cs",
+              "ToolTip": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\FormulaireChambre.cs",
+              "RelativeToolTip": "GestionDortoir 0.1\\Views\\FormulaireChambre.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T20:25:39.825Z",
+              "WhenOpened": "2025-06-04T00:22:40.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormulaireChambre.cs [Design]",
+              "DocumentMoniker": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\FormulaireChambre.cs",
+              "RelativeDocumentMoniker": "GestionDortoir 0.1\\Views\\FormulaireChambre.cs",
+              "ToolTip": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\FormulaireChambre.cs [Design]",
+              "RelativeToolTip": "GestionDortoir 0.1\\Views\\FormulaireChambre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T00:17:08.755Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GestionChambreControl.cs [Design]",
+              "DocumentMoniker": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\GestionChambreControl.cs",
+              "RelativeDocumentMoniker": "GestionDortoir 0.1\\Views\\GestionChambreControl.cs",
+              "ToolTip": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\GestionChambreControl.cs [Design]",
+              "RelativeToolTip": "GestionDortoir 0.1\\Views\\GestionChambreControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T23:23:23.857Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CardChambre.cs [Design]",
+              "DocumentMoniker": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\CardChambre.cs",
+              "RelativeDocumentMoniker": "GestionDortoir 0.1\\Views\\CardChambre.cs",
+              "ToolTip": "D:\\L3\\2eme Semestre\\GestionDortoir 0.1\\GestionDortoir 0.1\\Views\\CardChambre.cs [Design]",
+              "RelativeToolTip": "GestionDortoir 0.1\\Views\\CardChambre.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T23:23:19.98Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 54,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

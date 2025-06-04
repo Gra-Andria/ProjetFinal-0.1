@@ -16,6 +16,7 @@ namespace GestionDortoir_0._1.Views
     public partial class GestionEtudiantControl : UserControl
     {
         private EtudiantController controller = new EtudiantController();
+        private List<Etudiants> touslesEtudiants = new List<Etudiants>();
         public GestionEtudiantControl()
         {
             InitializeComponent();
@@ -120,15 +121,11 @@ namespace GestionDortoir_0._1.Views
             ResetForm();
         }
 
-        private void GestionEtudiantControl_Load(object sender, EventArgs e)
-        {
-            ChargerEtudiants();
-        }
         private void ChargerEtudiants()
         {
-            List<Etudiants> liste = controller.GetAllEtudiants();
+            touslesEtudiants = controller.GetAllEtudiants();
 
-            dataGridViewEtudiants.DataSource = liste;
+            dataGridViewEtudiants.DataSource = touslesEtudiants;
 
             //Pas visible
             dataGridViewEtudiants.Columns["Picture"].Visible = false;
@@ -156,9 +153,45 @@ namespace GestionDortoir_0._1.Views
 
         private void GestionEtudiantControl_Load_1(object sender, EventArgs e)
         {
-            var liste = controller.GetAllEtudiants();
-            MessageBox.Show("Nombre d'étudiants : " + liste.Count);
             ChargerEtudiants();
+        }
+
+        private void txtRecherche_TextChanged(object sender, EventArgs e)
+        {
+            string filtre = txtRecherche.Text.Trim().ToLower();
+
+            var resultat = touslesEtudiants.Where(et =>
+                et.Nom.ToLower().Contains(filtre) ||
+                et.Prenom.ToLower().Contains(filtre) ||
+                et.Matricule.ToString().Contains(filtre) ||
+                et.Filiere.ToLower().Contains(filtre)
+            ).ToList();
+
+            dataGridViewEtudiants.DataSource = resultat;
+
+            lblAucunTrouver.Visible = resultat.Count == 0;
+        }
+
+        private void cmbAnneeEtude_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string annee = cmbAnneeEtude.SelectedItem.ToString();
+
+            List<Etudiants> resultat;
+
+            if (annee == "Toutes")
+            {
+                resultat = touslesEtudiants;
+            }
+            else
+            {
+                resultat = touslesEtudiants
+                    .Where(et => et.AnneeEtude == annee)
+                    .ToList();
+            }
+
+            dataGridViewEtudiants.DataSource = resultat;
+
+            lblAucunTrouver.Visible = (resultat.Count == 0);
         }
     }
 }

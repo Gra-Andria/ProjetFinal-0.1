@@ -50,3 +50,4 @@ D:\L3\2eme Semestre\GestionDortoir 0.1\GestionDortoir 0.1\obj\Debug\GestionDorto
 D:\L3\2eme Semestre\GestionDortoir 0.1\GestionDortoir 0.1\obj\Debug\GestionDortoir_0._1.Views.GestionChambreControl.resources
 D:\L3\2eme Semestre\GestionDortoir 0.1\GestionDortoir 0.1\obj\Debug\GestionDortoir_0._1.Views.PlannificationControl.resources
 D:\L3\2eme Semestre\GestionDortoir 0.1\GestionDortoir 0.1\obj\Debug\GestionDortoir_0._1.Views.DashboardControl.resources
+D:\L3\2eme Semestre\GestionDortoir 0.1\GestionDortoir 0.1\obj\Debug\GestionDortoir_0._1.Views.CardChambre.resources

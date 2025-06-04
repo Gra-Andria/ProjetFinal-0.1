@@ -1,4 +1,6 @@
-﻿using GestionDortoir_0._1.Models;
+﻿using GestionDortoir_0._1.Controllers;
+using GestionDortoir_0._1.Models;
+using Guna.UI2.AnimatorNS;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +17,7 @@ namespace GestionDortoir_0._1.Views
     {
         private MainForm mainForm;
         private Utilisateur utilisateur;
+        private EtudiantController controller = new EtudiantController();
         public DashboardPrecepteur(MainForm form, Utilisateur user)
         {
             InitializeComponent();
@@ -23,6 +26,10 @@ namespace GestionDortoir_0._1.Views
 
             labelNom.Text = user.Nom;
             labelRole.Text = user.Role;
+
+            var liste = controller.GetAllEtudiants();
+            //MessageBox.Show("Nombre d'étudiants : " + liste.Count);
+            lblTotalEtudi.Text = liste.Count.ToString();
         }
         //Chargement les Panel
         private void LoadUserControl(UserControl userControl) { 
@@ -85,6 +92,7 @@ namespace GestionDortoir_0._1.Views
                 }
             }
         }
+
 
     }
 }

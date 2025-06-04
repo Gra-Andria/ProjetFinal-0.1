@@ -1,4 +1,5 @@
 ﻿using GestionDortoir_0._1.Controllers;
+using GestionDortoir_0._1.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,15 +17,21 @@ namespace GestionDortoir_0._1.Views
         public GestionChambreControl()
         {
             InitializeComponent();
-            LoadChambres();
+            AfficherTousLesChambres();
         }
-        private void LoadChambres()
+        //Afficher tous les chambres
+        private void AfficherTousLesChambres()
         {
-            var chambres = ChambreController.GetAllChambres();
+            flowLayoutPanelChambres.Controls.Clear();
+            List<Chambre> chambres = ChambreController.GetAllChambre();
             foreach (var chambre in chambres)
             {
-                var card = new ChambreCard(chambre);
-                panelChambre.Controls.Add(card);
+                var equipements = EquipementController.GetByChambreId(chambre.numero_chambre);
+
+                CardChambre card = new CardChambre();
+                card.ChargerDonnees(chambre, equipements);
+
+                flowLayoutPanelChambres.Controls.Add(card);
             }
         }
     }

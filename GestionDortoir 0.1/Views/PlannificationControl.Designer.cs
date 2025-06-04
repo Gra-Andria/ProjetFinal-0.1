@@ -54,23 +54,23 @@
             this.tabControlPlanning.SelectedIndex = 0;
             this.tabControlPlanning.Size = new System.Drawing.Size(1166, 732);
             this.tabControlPlanning.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.tabControlPlanning.TabButtonHoverState.FillColor = System.Drawing.Color.Indigo;
+            this.tabControlPlanning.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(100)))), ((int)(((byte)(180)))));
             this.tabControlPlanning.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.tabControlPlanning.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
             this.tabControlPlanning.TabButtonHoverState.InnerColor = System.Drawing.Color.White;
             this.tabControlPlanning.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.tabControlPlanning.TabButtonIdleState.FillColor = System.Drawing.Color.MediumPurple;
+            this.tabControlPlanning.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tabControlPlanning.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
             this.tabControlPlanning.TabButtonIdleState.ForeColor = System.Drawing.Color.White;
             this.tabControlPlanning.TabButtonIdleState.InnerColor = System.Drawing.Color.White;
             this.tabControlPlanning.TabButtonSelectedState.BorderColor = System.Drawing.Color.Transparent;
             this.tabControlPlanning.TabButtonSelectedState.FillColor = System.Drawing.Color.White;
             this.tabControlPlanning.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.tabControlPlanning.TabButtonSelectedState.ForeColor = System.Drawing.Color.Indigo;
-            this.tabControlPlanning.TabButtonSelectedState.InnerColor = System.Drawing.Color.Indigo;
+            this.tabControlPlanning.TabButtonSelectedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(50)))), ((int)(((byte)(150)))));
+            this.tabControlPlanning.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.tabControlPlanning.TabButtonSize = new System.Drawing.Size(180, 40);
             this.tabControlPlanning.TabIndex = 2;
-            this.tabControlPlanning.TabMenuBackColor = System.Drawing.Color.MediumPurple;
+            this.tabControlPlanning.TabMenuBackColor = System.Drawing.Color.Silver;
             // 
             // tabTacheMenagere
             // 
@@ -87,7 +87,7 @@
             this.tabCulte.Location = new System.Drawing.Point(184, 4);
             this.tabCulte.Name = "tabCulte";
             this.tabCulte.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCulte.Size = new System.Drawing.Size(612, 656);
+            this.tabCulte.Size = new System.Drawing.Size(978, 724);
             this.tabCulte.TabIndex = 1;
             this.tabCulte.Text = "Plannification des cultes";
             this.tabCulte.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             // 
             this.tabPresenceCulte.Location = new System.Drawing.Point(184, 4);
             this.tabPresenceCulte.Name = "tabPresenceCulte";
-            this.tabPresenceCulte.Size = new System.Drawing.Size(612, 656);
+            this.tabPresenceCulte.Size = new System.Drawing.Size(978, 724);
             this.tabPresenceCulte.TabIndex = 3;
             this.tabPresenceCulte.Text = "Présence au culte";
             this.tabPresenceCulte.UseVisualStyleBackColor = true;
@@ -105,7 +105,7 @@
             // 
             this.tabEvenements.Location = new System.Drawing.Point(184, 4);
             this.tabEvenements.Name = "tabEvenements";
-            this.tabEvenements.Size = new System.Drawing.Size(612, 656);
+            this.tabEvenements.Size = new System.Drawing.Size(978, 724);
             this.tabEvenements.TabIndex = 2;
             this.tabEvenements.Text = "Plannification des évènements";
             this.tabEvenements.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             // 
             this.tabOpenHouse.Location = new System.Drawing.Point(184, 4);
             this.tabOpenHouse.Name = "tabOpenHouse";
-            this.tabOpenHouse.Size = new System.Drawing.Size(612, 656);
+            this.tabOpenHouse.Size = new System.Drawing.Size(978, 724);
             this.tabOpenHouse.TabIndex = 4;
             this.tabOpenHouse.Text = "Open House";
             this.tabOpenHouse.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             // 
             this.tabBureauQuartier.Location = new System.Drawing.Point(184, 4);
             this.tabBureauQuartier.Name = "tabBureauQuartier";
-            this.tabBureauQuartier.Size = new System.Drawing.Size(612, 656);
+            this.tabBureauQuartier.Size = new System.Drawing.Size(978, 724);
             this.tabBureauQuartier.TabIndex = 5;
             this.tabBureauQuartier.Text = "Membre de bureau des quartiers";
             this.tabBureauQuartier.UseVisualStyleBackColor = true;
